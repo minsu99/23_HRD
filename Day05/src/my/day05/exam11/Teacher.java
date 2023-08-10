@@ -32,8 +32,10 @@ public class Teacher extends Person {
 	
 	// toString 메서드 재정의
 	@Override
-	public String toString() {
-		return super.toString() + ", ID: " + tId + ", Subject: " + subject;
+	public String personInfo() {
+		String info = super.personInfo() + "\n교번 : " + tId + "\n과목 : " + subject;
+		return info;
+		 
 	}
 	
 	// inputInfo() 메소드 오버라이딩
