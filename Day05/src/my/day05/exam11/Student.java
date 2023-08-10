@@ -34,7 +34,7 @@ public class Student extends Person {
 	// personInfo 메서드 오버라이딩
 	@Override
 	public String personInfo() {
-		String info = super.personInfo();
+		String info = super.personInfo(); // 이름 리턴 
 		info += "\n학번: " + sID + "\n수강과목: " + className;
 		return info;
 	}
@@ -62,7 +62,7 @@ public class Student extends Person {
 
 	@Override
 	public void setId(String id) {
-		this.sID = sID;
+		sID = id;
 		
 	}
 	
