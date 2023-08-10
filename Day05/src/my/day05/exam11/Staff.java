@@ -37,6 +37,14 @@ public class Staff extends Person {
 	public void setsId(String sId) {
 		this.sId = sId;
 	}
+	
+	// personInfo 메서드 오버라이딩
+		@Override
+		public String personInfo() {
+			String info = super.personInfo(); // 이름 리턴 
+			info += "\n사번: " +sId + "\n과목: " + dept;
+			return info;
+		}
 
 
 
