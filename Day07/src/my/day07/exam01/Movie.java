@@ -59,7 +59,7 @@ public class Movie {
 	}
 
 	public String toString() {
-		return String.format("[%d]: %s(%s)", id, title, genre);
+		return String.format("[%d]: <%s> - %s", id, title, genre);
 	}
 
 }
